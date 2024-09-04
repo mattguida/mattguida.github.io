@@ -80,7 +80,11 @@ analytics:
 author:
   name: "Matteo Guida"
   avatar: "../images/profile.png"
+<<<<<<< HEAD
   bio: "Ph.D. Computer Science"
+=======
+  bio: "Ph.D. Student, School of Computing and Information Systems"
+>>>>>>> 954dcac57562dccf47987843b291e2e405e6ea26
   location: "Melbourne, Australia"
   employer: "University of Melbourne"
   pubmed:
