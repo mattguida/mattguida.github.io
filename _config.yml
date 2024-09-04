@@ -7,7 +7,7 @@
 
 # Site Settings
 locale: "en-US"
-title: "Matteo Guida, Ph.D"
+title: "Matteo Guida, Ph.D."
 title_separator: "-"
 name: &name "Matteo Guida"
 description: &description "Student in Natural Language Processing"
@@ -80,7 +80,7 @@ analytics:
 author:
   name: "Matteo Guida"
   avatar: "../images/profile.png"
-  bio: "Just trying to set this up."
+  bio: "Ph.D. Computer Science"
   location: "Melbourne, Australia"
   employer: "University of Melbourne"
   pubmed:
