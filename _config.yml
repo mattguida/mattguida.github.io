@@ -85,7 +85,7 @@ author:
   employer: "University of Melbourne"
   pubmed:
   googlescholar:
-  email: "guida@student.unimelb.edu.au"
+  email: "m.guida@student.unimelb.edu.au"
   researchgate: # example: "https://www.researchgate.net/profile/yourprofile"
   uri:
   bitbucket:
@@ -168,20 +168,20 @@ kramdown:
   enable_coderay: false
 
 # Collections
-collections:
+"""collections:
   teaching:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
-
+"""
 # Defaults
 defaults:
   # _posts
@@ -203,7 +203,7 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
-  - scope:
+"""  - scope:
       path: ""
       type: teaching
     values:
@@ -236,7 +236,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: true"""
 
 # Sass/SCSS
 sass:
