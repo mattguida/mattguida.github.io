@@ -84,7 +84,7 @@ author:
   location: "Melbourne, Australia"
   employer: "University of Melbourne"
   pubmed:
-  googlescholar:
+  googlescholar: "https://scholar.google.com/citations?user=Z4WLFFIAAAAJ&hl=en&oi=ao"
   email: "m.guida@student.unimelb.edu.au"
   researchgate: # example: "https://www.researchgate.net/profile/yourprofile"
   uri:
@@ -101,7 +101,7 @@ author:
   impactstory: #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm:
   linkedin:
-  orcid: "http://orcid.org/yourorcidurl"
+  orcid: #"http://orcid.org/yourorcidurl"
   pinterest:
   soundcloud:
   stackoverflow: # http://stackoverflow.com/users/123456/username
@@ -217,7 +217,7 @@ defaults:
       type: publications
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: false
       comments: false
   # _portfolio
