@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-🏫 I am a first-year PhD candidate at the University of Melbourne, in the Faculty of Engineering and Information Systems.
+🏫 I am a second-year PhD candidate at the University of Melbourne, in the Faculty of Engineering and Information Systems.
 
 🔬 Currently investigating automatic venues of frame detection in news coverage of contemporary polarizing issues,
 supervised by [Prof. Lea Frermann](https://www.frermann.de/), [Prof. Ed Hovy](https://findanexpert.unimelb.edu.au/profile/887453-eduard-hovy) and [Dr. Yulia Otmakhova](https://scholar.google.com/citations?user=yzaozUUAAAAJ&hl=en).
