@@ -15,7 +15,7 @@ redirect_from:
 
 > How do humans navigate information in online spaces? What kind of content do we engage with most, and why do we react differently to apparently identical stimuli?
 
-My research lives at the intersection of NLP and media studies, looking at how framing, moral values, and argumentation shape the way we read the news, respond to it, and reshape each other's views in the comments.
+My research uses computational methods drawing from natural language processing and statistical methods to understand human behaviour through vast collections of online data — looking at how framing, moral values, and argumentation shape the way we read the news, respond to it, and reshape each other's views in the comments.
 
 I'm a third-year PhD candidate at the University of Melbourne's School of Computing and Information Systems, supervised by [Prof. Lea Frermann](https://www.frermann.de/), [Prof. Ed Hovy](https://findanexpert.unimelb.edu.au/profile/887453-eduard-hovy), and [Dr. Yulia Otmakhova](https://scholar.google.com/citations?user=yzaozUUAAAAJ&hl=en). Before this, I completed a Masters in Speech and Language Processing at the University of Konstanz.
 
