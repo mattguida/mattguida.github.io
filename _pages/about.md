@@ -13,7 +13,7 @@ redirect_from:
   <figcaption style="font-size: 0.7em; text-align: center; opacity: 0.65; margin-top: 0.5em;">Art by <a href="https://parablevisions.com">Cameron Gray</a>, via <a href="https://philosophynow.org/issues/165/Platos_Cave_and_Social_Media">Philosophy Now</a></figcaption>
 </figure>
 
-> How do humans navigate information in online spaces? What kind of content do we engage with most, and why do some framings of the same story spread while others don't?
+> How do humans navigate information in online spaces? What kind of content do we engage with most, and why do we react differently to apparently identical stimuli?
 
 My research lives at the intersection of NLP and media studies, looking at how framing, moral values, and argumentation shape the way we read the news, respond to it, and reshape each other's views in the comments.
 
