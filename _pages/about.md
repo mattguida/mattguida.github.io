@@ -21,6 +21,11 @@ I'm a third-year PhD candidate at the University of Melbourne's School of Comput
 
 <div style="clear: both;"></div>
 
+## Updates
+
+- **July 2027** — Attended IC2S2 in Burlington, Vermont.
+- **July 2027** — Attended ACL in San Diego, California, where I presented two papers: [paper one](https://doi.org/10.1162/TACL.a.698) and [paper two](https://aclanthology.org/2026.findings-acl.701/).
+
 <div class="notice--info" markdown="1">
 #### Looking for a research internship
 Reach out at [{{ site.author.email }}](mailto:{{ site.author.email }}) if you think there's a good fit.
