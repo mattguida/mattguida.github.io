@@ -1,14 +1,35 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
+Here are some tools and interactive prototypes I have built to make research ideas easier to explore and use.
 
+## Climate Narrative Analyzer
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+This dashboard collects climate news and uses AI to show how different outlets tell the story: who is presented as responsible, who is affected, and which wider themes appear. You can compare sources, explore changes over time, or paste in an article to analyse it.
 
+[View the Climate Narrative Analyzer on GitHub](https://github.com/mattguida/climate-narrative-analyzer){: .btn .btn--info }
+
+## Discourse Feed
+
+This social media feed prototype ranks news posts by the quality of the conversation around them, instead of by clicks and reactions. It explores how a feed might encourage more thoughtful discussion online.
+
+[View the Discourse Feed on GitHub](https://github.com/mattguida/discourse-feed){: .btn .btn--info }
+
+## News Comment Moderator
+
+This moderation prototype looks beyond offensive words to consider how a comment is written and how it relates to the discussion. It is designed to help identify comments that may lead to healthier conversations.
+
+[Try the News Comment Moderator](https://mpprng--comment-moderation-agent-commentmoderationservice-serve.modal.run){: .btn .btn--info }
+[View the source code](https://github.com/mattguida/news-comment-moderator){: .btn }
+
+The live demo runs on an on-demand service, so it may take up to two minutes to open after a period of inactivity.
+
+## Depth Perception
+
+This interactive explainer shows how depth can be estimated from a single image. It turns a technical computer-vision idea into a visual experience that you can explore in the browser.
+
+[View Depth Perception on GitHub](https://github.com/mattguida/depth-perception){: .btn .btn--info }
