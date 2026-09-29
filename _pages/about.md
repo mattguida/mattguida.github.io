@@ -21,10 +21,14 @@ I'm a third-year PhD candidate at the University of Melbourne's School of Comput
 
 <div style="clear: both;"></div>
 
+<div style="background: #f3f3f3; border-radius: 6px; padding: 1.25em 1.5em; margin: 1.5em 0;" markdown="1">
+
 ## Updates
 
 - **July 2026** — Attended the [International Conference on Computational Social Science (IC2S2)](https://ic2s2-2026.org/) in Burlington, Vermont.
 - **July 2026** — Attended the [Annual Meeting of the Association for Computational Linguistics (ACL)](https://2026.aclweb.org/) in San Diego, California, where I presented two papers: [paper one](https://doi.org/10.1162/TACL.a.698) and [paper two](https://aclanthology.org/2026.findings-acl.701/).
+
+</div>
 
 <div class="notice--info" markdown="1">
 #### Looking for an internship
