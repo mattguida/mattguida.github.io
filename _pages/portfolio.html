@@ -10,27 +10,17 @@ author_profile: true
 <section>
   <h2>Climate Narrative Analyzer</h2>
   <p>This dashboard collects climate news and uses AI to show how different outlets tell the story: who is presented as responsible, who is affected, and which wider themes appear. You can compare sources, explore changes over time, or paste in an article to analyse it.</p>
-  <p><a href="https://github.com/mattguida/climate-narrative-analyzer" class="btn btn--info">View the Climate Narrative Analyzer on GitHub</a></p>
-</section>
-
-<section>
-  <h2>Discourse Feed</h2>
-  <p>This social media feed prototype ranks news posts by the quality of the conversation around them, instead of by clicks and reactions. It explores how a feed might encourage more thoughtful discussion online.</p>
-  <p><a href="https://github.com/mattguida/discourse-feed" class="btn btn--info">View the Discourse Feed on GitHub</a></p>
+  <p><a href="https://climate-narrative-analyzer.onrender.com/" class="btn btn--info">Try the Climate Narrative Analyzer</a></p>
 </section>
 
 <section>
   <h2>News Comment Moderator</h2>
-  <p>This moderation prototype looks beyond offensive words to consider how a comment is written and how it relates to the discussion. It is designed to help identify comments that may lead to healthier conversations.</p>
+  <p>This system uses a pretrained transformer model to identify the perspectives, or <em>frames</em>, used to write a news article. It then invites you to leave a comment on the article.</p>
+  <p>Two pretrained transformer models assess how your comment relates to the article's perspectives, if at all, and evaluate the quality of the comment. This includes whether it appears healthy, is made in good faith, and contributes to the discussion, or whether it may be unhealthy or harmful.</p>
+  <p>A large language model brings this information together in real time and provides structured feedback. When a comment may be risky, it also suggests clearer and more constructive ways to express it, based on the context of both the article and the original comment.</p>
   <p>
     <a href="https://mpprng--comment-moderation-agent-commentmoderationservice-serve.modal.run" class="btn btn--info">Try the News Comment Moderator</a>
     <a href="https://github.com/mattguida/news-comment-moderator" class="btn">View the source code</a>
   </p>
   <p><small>The live demo runs on an on-demand service, so it may take up to two minutes to open after a period of inactivity.</small></p>
-</section>
-
-<section>
-  <h2>Depth Perception</h2>
-  <p>This interactive explainer shows how depth can be estimated from a single image. It turns a technical computer-vision idea into a visual experience that you can explore in the browser.</p>
-  <p><a href="https://github.com/mattguida/depth-perception" class="btn btn--info">View Depth Perception on GitHub</a></p>
 </section>
