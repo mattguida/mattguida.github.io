@@ -8,12 +8,6 @@ author_profile: true
 <p>Here are some tools and interactive prototypes I have built to make research ideas easier to explore and use.</p>
 
 <section>
-  <h2>Climate Narrative Analyzer</h2>
-  <p>This dashboard collects climate news and uses AI to show how different outlets tell the story: who is presented as responsible, who is affected, and which wider themes appear. You can compare sources, explore changes over time, or paste in an article to analyse it.</p>
-  <p><a href="https://climate-narrative-analyzer.onrender.com/" class="btn btn--info">Try the Climate Narrative Analyzer</a></p>
-</section>
-
-<section>
   <h2>News Comment Moderator</h2>
   <p>This system uses a pretrained transformer model to identify the perspectives, or <em>frames</em>, used to write a news article. It then invites you to leave a comment on the article.</p>
   <p>Two pretrained transformer models assess how your comment relates to the article's perspectives, if at all, and evaluate the quality of the comment. This includes whether it appears healthy, is made in good faith, and contributes to the discussion, or whether it may be unhealthy or harmful.</p>
@@ -22,5 +16,11 @@ author_profile: true
     <a href="https://mpprng--comment-moderation-agent-commentmoderationservice-serve.modal.run" class="btn btn--info">Try the News Comment Moderator</a>
     <a href="https://github.com/mattguida/news-comment-moderator" class="btn">View the source code</a>
   </p>
-  <p><small>The live demo runs on an on-demand service, so it may take up to two minutes to open after a period of inactivity.</small></p>
+  <p><small>The live demo runs on an on-demand service. After a period of inactivity, the site may take up to two minutes to load, and the first comment may take a further two to three minutes to analyse while the models start. Once they are ready, subsequent comments are analysed in real time.</small></p>
+</section>
+
+<section>
+  <h2>Climate Narrative Analyzer</h2>
+  <p>This dashboard collects climate news and uses AI to show how different outlets tell the story: who is presented as responsible, who is affected, and which wider themes appear. You can compare sources, explore changes over time, or paste in an article to analyse it.</p>
+  <p><a href="https://climate-narrative-analyzer.onrender.com/" class="btn btn--info">Try the Climate Narrative Analyzer</a></p>
 </section>

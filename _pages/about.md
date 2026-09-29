@@ -27,8 +27,8 @@ I'm a third-year PhD candidate at the University of Melbourne's School of Comput
 - **July 2027** — Attended ACL in San Diego, California, where I presented two papers: [paper one](https://doi.org/10.1162/TACL.a.698) and [paper two](https://aclanthology.org/2026.findings-acl.701/).
 
 <div class="notice--info" markdown="1">
-#### Looking for a research internship
-Reach out at [{{ site.author.email }}](mailto:{{ site.author.email }}) if you think there's a good fit.
+#### Looking for an internship
+I'm looking for an internship where I can apply my experience in natural language processing, machine learning, and large-scale data analysis—ideally in media intelligence, media analytics, audience insights, or a related field. If you think there could be a good fit, please [get in touch](mailto:{{ site.author.email }}).
 </div>
 
 <p>
