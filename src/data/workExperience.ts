@@ -3,7 +3,7 @@ export const workExperience = [
     title: `Casual Software Developer`,
     company: `University of Melbourne`,
     years: `May 2026 - Present`,
-    logo: `https://upload.wikimedia.org/wikipedia/en/b/b4/The_University_of_Melbourne_Coat_of_Arms.svg`
+    logo: `/images/unimelb_logo.svg`
   },
   {
     title: `Working Student — Natural Language Processing`,

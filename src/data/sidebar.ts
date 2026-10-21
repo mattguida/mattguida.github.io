@@ -1,4 +1,4 @@
-import { LuUser, LuWrench, LuLibraryBig, LuNewspaper } from "react-icons/lu";
+import { LuUser, LuWrench, LuLibraryBig } from "react-icons/lu";
 
 export const sidebar = {
   userName: `Matteo Guida`,
@@ -18,11 +18,6 @@ export const sidebar = {
       title: `Publications`,
       url: `publications`,
       icon: LuLibraryBig
-    },
-    {
-      title: `Articles`,
-      url: `articles`,
-      icon: LuNewspaper
     }
   ]
 };
