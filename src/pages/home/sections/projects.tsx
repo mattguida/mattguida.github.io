@@ -65,39 +65,34 @@ function ProjectCard({
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full flex flex-col h-full">
       <div className="flex flex-col flex-grow">
-        <a
-          href={repoData.html_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
-          <div className="aspect-3/2 w-full overflow-hidden">
-            {repoData.previewImage ? (
-              <img
-                src={repoData.previewImage}
-                alt={repoData.name || "Project image"}
-                className="w-full h-full object-cover"
-                style={{ overflowClipMargin: "unset" }}
-                loading="lazy"
-              />
-            ) : (
-              <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
-                <span className="text-lg font-semibold opacity-80 text-center">
-                  {repoData.name || "Unnamed Project"}
-                </span>
-                <span className="text-sm text-muted-foreground text-center">
-                  Image not available
-                </span>
-              </div>
-            )}
-          </div>
-        </a>
+        {repoData.articleUrl ? (
+          <Link to={repoData.articleUrl} className="block">
+            <ProjectImage repoData={repoData} />
+          </Link>
+        ) : (
+          <a
+            href={repoData.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <ProjectImage repoData={repoData} />
+          </a>
+        )}
 
         <div className="w-full border-t" />
 
         <div className="flex flex-col flex-grow py-3 px-4 gap-y-2">
           <div className="text-base font-semibold line-clamp-2">
-            {repoData.html_url ? (
+            {repoData.articleUrl ? (
+              <Link
+                to={repoData.articleUrl}
+                aria-label="Read more"
+                className="cursor-pointer hover:underline underline-offset-4"
+              >
+                {repoData.displayName || repoData.name}
+              </Link>
+            ) : repoData.html_url ? (
               <a
                 href={repoData.html_url}
                 target="_blank"
@@ -181,5 +176,34 @@ function ProjectCard({
         </div>
       </div>
     </Card>
+  );
+}
+
+function ProjectImage({
+  repoData,
+}: {
+  repoData: (typeof featuredReposArray)[number];
+}) {
+  return (
+    <div className="aspect-3/2 w-full overflow-hidden">
+      {repoData.previewImage ? (
+        <img
+          src={repoData.previewImage}
+          alt={repoData.name || "Project image"}
+          className="w-full h-full object-cover"
+          style={{ overflowClipMargin: "unset" }}
+          loading="lazy"
+        />
+      ) : (
+        <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
+          <span className="text-lg font-semibold opacity-80 text-center">
+            {repoData.name || "Unnamed Project"}
+          </span>
+          <span className="text-sm text-muted-foreground text-center">
+            Image not available
+          </span>
+        </div>
+      )}
+    </div>
   );
 }

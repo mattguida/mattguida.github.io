@@ -5,13 +5,14 @@
     "stargazers_count": 0,
     "topics": [],
     "language": "HTML",
-    "homepage": null,
+    "homepage": "https://climate-narrative-analyzer.onrender.com/",
     "html_url": "https://github.com/mattguida/climate-narrative-analyzer",
     "created_at": "2026-02-05T01:35:47Z",
     "updated_at": "2026-06-24T22:41:52Z",
     "pushed_at": "2026-06-24T22:41:47Z",
     "displayName": "Climate Narrative Analyzer",
     "previewImage": "/images/climate-narrative-dashboard.png",
+    "articleUrl": "/articles/climate-narrative-analyzer",
     "featured": true
   },
   "news-comment-moderator": {
@@ -20,13 +21,14 @@
     "stargazers_count": 0,
     "topics": [],
     "language": "Python",
-    "homepage": null,
+    "homepage": "https://mpprng--comment-moderation-agent-commentmoderationservice-serve.modal.run",
     "html_url": "https://github.com/mattguida/news-comment-moderator",
     "created_at": "2025-10-21T22:42:10Z",
     "updated_at": "2025-10-22T04:23:09Z",
     "pushed_at": "2025-10-22T04:23:06Z",
     "displayName": "News Comment Moderator",
     "previewImage": "/images/comment-moderator-article.png",
+    "articleUrl": "/articles/news-comment-moderator",
     "featured": true
   }
 }

@@ -10,5 +10,6 @@ export interface RepoProps {
   pushed_at: string;
   displayName: string | null;
   previewImage: string | null;
+  articleUrl: string | null;
   featured: boolean;
 }

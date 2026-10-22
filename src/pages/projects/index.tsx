@@ -1,4 +1,4 @@
-import { useSearchParams, useNavigate } from "react-router";
+import { useSearchParams, useNavigate, Link } from "react-router";
 import { FaWrench, FaGithub, FaGlobe, FaRegStar } from "react-icons/fa6";
 
 import {
@@ -187,37 +187,48 @@ function ProjectCard({
     language,
     stargazers_count,
     homepage,
+    articleUrl,
   } = repo;
+
+  const projectImage = (
+    <div className="aspect-3/2 w-full max-h-72 lg:max-w-75 lg:h-50 overflow-hidden">
+      {previewImage ? (
+        <img
+          src={previewImage}
+          alt={name || "Project image"}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      ) : (
+        <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
+          <span className="text-lg font-semibold opacity-80 text-center">
+            {name || "Unnamed Project"}
+          </span>
+          <span className="text-sm text-muted-foreground text-center">
+            Image not available
+          </span>
+        </div>
+      )}
+    </div>
+  );
 
   return (
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full">
       <div className="flex flex-col lg:flex-row">
-        <a
-          href={html_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
-          <div className="aspect-3/2 w-full max-h-72 lg:max-w-75 lg:h-50 overflow-hidden">
-            {previewImage ? (
-              <img
-                src={previewImage}
-                alt={name || "Project image"}
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            ) : (
-              <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
-                <span className="text-lg font-semibold opacity-80 text-center">
-                  {name || "Unnamed Project"}
-                </span>
-                <span className="text-sm text-muted-foreground text-center">
-                  Image not available
-                </span>
-              </div>
-            )}
-          </div>
-        </a>
+        {articleUrl ? (
+          <Link to={articleUrl} className="block">
+            {projectImage}
+          </Link>
+        ) : (
+          <a
+            href={html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            {projectImage}
+          </a>
+        )}
 
         <div className="w-full border-t block lg:hidden" />
         <div className="h-full border-l hidden lg:block" />
@@ -226,7 +237,15 @@ function ProjectCard({
           <ScrollArea className="flex-1 min-h-0">
             <div className="flex flex-col gap-y-2">
               <div className="text-base font-semibold">
-                {html_url ? (
+                {articleUrl ? (
+                  <Link
+                    to={articleUrl}
+                    aria-label="Read more"
+                    className="hover:underline underline-offset-4"
+                  >
+                    {displayName || name}
+                  </Link>
+                ) : html_url ? (
                   <a
                     href={html_url}
                     target="_blank"
