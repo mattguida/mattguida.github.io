@@ -8,4 +8,6 @@ export const featuredRepos: RepoMap = Object.fromEntries(
   Object.entries(repos).filter(([, repo]) => repo.featured === true),
 );
 
-export const featuredReposArray: RepoProps[] = Object.values(featuredRepos);
+export const featuredReposArray: RepoProps[] = Object.values(featuredRepos).sort(
+  (a, b) => (a.order ?? Infinity) - (b.order ?? Infinity),
+);

@@ -11,5 +11,6 @@ export interface RepoProps {
   displayName: string | null;
   previewImage: string | null;
   articleUrl: string | null;
+  order: number | null;
   featured: boolean;
 }

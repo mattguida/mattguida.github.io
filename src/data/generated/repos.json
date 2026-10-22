@@ -13,6 +13,7 @@
     "displayName": "Climate Narrative Analyzer",
     "previewImage": "/images/climate-narrative-dashboard.png",
     "articleUrl": "/articles/climate-narrative-analyzer",
+    "order": 2,
     "featured": true
   },
   "news-comment-moderator": {
@@ -29,6 +30,7 @@
     "displayName": "News Comment Moderator",
     "previewImage": "/images/comment-moderator-article.png",
     "articleUrl": "/articles/news-comment-moderator",
+    "order": 1,
     "featured": true
   }
 }

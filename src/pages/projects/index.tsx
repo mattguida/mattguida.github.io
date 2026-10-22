@@ -1,5 +1,5 @@
 import { useSearchParams, useNavigate, Link } from "react-router";
-import { FaWrench, FaGithub, FaGlobe, FaRegStar } from "react-icons/fa6";
+import { FaWrench, FaGlobe } from "react-icons/fa6";
 
 import {
   Select,
@@ -15,7 +15,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { usePageTitle } from "@/hooks/use-pagetitle";
 import { repos } from "@/data/repos";
 
-const validSorts = ["stars", "updated", "created"] as const;
+const validSorts = ["featured", "stars", "updated", "created"] as const;
 type SortByType = (typeof validSorts)[number];
 
 const allTopics = Array.from(
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
 
   const topicFilter: string =
     topic && allTopics.includes(topic) ? topic : "all";
-  const sortBy: SortByType = validSorts.find((s) => s === sort) ?? "updated";
+  const sortBy: SortByType = validSorts.find((s) => s === sort) ?? "featured";
 
   const updateTopicFilter = (newTopic: string) => {
     const params = new URLSearchParams(searchParams);
@@ -67,11 +67,13 @@ export default function ProjectsPage() {
           new Date(bData.created_at).getTime() -
           new Date(aData.created_at).getTime()
         );
-      } else {
+      } else if (sortBy === "updated") {
         return (
           new Date(bData.pushed_at).getTime() -
           new Date(aData.pushed_at).getTime()
         );
+      } else {
+        return (aData.order ?? Infinity) - (bData.order ?? Infinity);
       }
     });
 
@@ -160,6 +162,7 @@ function SortSelector({
           <SelectValue placeholder="Sort by" />
         </SelectTrigger>
         <SelectContent>
+          <SelectItem value="featured">✨ Featured</SelectItem>
           <SelectItem value="updated">🕒 Last Updated</SelectItem>
           <SelectItem value="created">📅 Created Time</SelectItem>
           <SelectItem value="stars">⭐ Star Count</SelectItem>
@@ -178,14 +181,12 @@ function ProjectCard({
 }) {
   const repo = repos[project_name];
   const {
-    html_url,
     previewImage,
     displayName,
     name,
     description,
     topics = [],
     language,
-    stargazers_count,
     homepage,
     articleUrl,
   } = repo;
@@ -220,14 +221,7 @@ function ProjectCard({
             {projectImage}
           </Link>
         ) : (
-          <a
-            href={html_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            {projectImage}
-          </a>
+          projectImage
         )}
 
         <div className="w-full border-t block lg:hidden" />
@@ -245,16 +239,6 @@ function ProjectCard({
                   >
                     {displayName || name}
                   </Link>
-                ) : html_url ? (
-                  <a
-                    href={html_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub repository"
-                    className="hover:underline underline-offset-4"
-                  >
-                    {displayName || name}
-                  </a>
                 ) : (
                   displayName || name
                 )}
@@ -283,46 +267,19 @@ function ProjectCard({
           </ScrollArea>
 
           <div className="flex flex-row items-center justify-between text-muted-foreground pt-2">
-            <div className="flex items-center gap-2 text-sm">
-              <p>Language: {language || "Unknown"}</p>
-              {stargazers_count !== null && (
-                <a
-                  href={`${html_url}/stargazers`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Stargazers"
-                  className="flex items-center gap-1 text-yellow-600 hover:text-yellow-500"
-                >
-                  <FaRegStar className="w-4 h-4" />
-                  <span>{stargazers_count}</span>
-                </a>
-              )}
-            </div>
+            <p className="text-sm">Language: {language || "Unknown"}</p>
 
-            <div className="flex items-center gap-2">
-              {homepage && (
-                <a
-                  href={homepage}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Project homepage"
-                  className="hover:text-foreground"
-                >
-                  <FaGlobe className="w-6 h-6" />
-                </a>
-              )}
-              {html_url && (
-                <a
-                  href={html_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub repository"
-                  className="hover:text-foreground"
-                >
-                  <FaGithub className="w-6 h-6" />
-                </a>
-              )}
-            </div>
+            {homepage && (
+              <a
+                href={homepage}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Project homepage"
+                className="hover:text-foreground"
+              >
+                <FaGlobe className="w-6 h-6" />
+              </a>
+            )}
           </div>
         </div>
       </div>
