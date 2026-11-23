@@ -11,6 +11,11 @@
 # ✔ Use the `featured` field to control which projects appear on the homepage.
 #    - featured: true  → shown on the homepage
 #    - featured: false → shown only on the Projects page
+#
+# ✔ Set `external: true` for projects that aren't backed by one of your GitHub
+#    repos (e.g. a collaboration hosted elsewhere). These are included as-is
+#    and skip the GitHub lookup — supply `description`, `homepage`,
+#    `articleUrl`, etc. directly since there's no repo to pull them from.
 # =====================================================
 
 projects:
@@ -31,4 +36,16 @@ projects:
       homepage: "https://climate-narrative-analyzer.onrender.com/"
       articleUrl: "/articles/climate-narrative-analyzer"
       order: 2
+      featured: true
+
+    - id: "depth-perception"
+      external: true
+      displayName: "Depth Perception"
+      previewImage: "/images/depth-perception-performance.jpg"
+      description: "A 2025 performance-experiment on AI-generated dance and how audiences perceive it, created with choreographer Alisdair Macindoe and researcher Dr. Lea Frermann (University of Melbourne). Built the real-time app audiences used to give live feedback during performances and ran the quantitative analysis on the results. Photo: James Henry."
+      homepage: "https://www.alisdairmacindoe.com/depth-perception"
+      articleUrl: "https://www.alisdairmacindoe.com/depth-perception"
+      topics: ["AI", "Dance", "Human-Computer Interaction"]
+      created_at: "2025-10-01T00:00:00Z"
+      order: 3
       featured: true

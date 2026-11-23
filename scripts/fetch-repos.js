@@ -109,6 +109,26 @@ async function fetchRepos() {
         };
       });
 
+    // projects not backed by a GitHub repo (e.g. external collaborations)
+    Object.entries(projectsDict)
+      .filter(([, item]) => item.external)
+      .forEach(([id, item]) => {
+        const { external: _external, ...fields } = item;
+        merged[id] = {
+          name: id,
+          description: null,
+          stargazers_count: 0,
+          topics: [],
+          language: null,
+          homepage: null,
+          html_url: null,
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+          pushed_at: new Date().toISOString(),
+          ...fields,
+        };
+      });
+
     ensureDirExists(outputPath);
     fs.writeFileSync(outputPath, JSON.stringify(merged, null, 2));
 

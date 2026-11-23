@@ -32,5 +32,22 @@
     "articleUrl": "/articles/news-comment-moderator",
     "order": 1,
     "featured": true
+  },
+  "depth-perception": {
+    "name": "depth-perception",
+    "description": "A 2025 performance-experiment on AI-generated dance and how audiences perceive it, created with choreographer Alisdair Macindoe and researcher Dr. Lea Frermann (University of Melbourne). Built the real-time app audiences used to give live feedback during performances and ran the quantitative analysis on the results. Photo: James Henry.",
+    "stargazers_count": 0,
+    "topics": ["AI", "Dance", "Human-Computer Interaction"],
+    "language": null,
+    "homepage": "https://www.alisdairmacindoe.com/depth-perception",
+    "html_url": null,
+    "created_at": "2025-10-01T00:00:00Z",
+    "updated_at": "2025-10-01T00:00:00Z",
+    "pushed_at": "2025-10-01T00:00:00Z",
+    "displayName": "Depth Perception",
+    "previewImage": "/images/depth-perception-performance.jpg",
+    "articleUrl": "https://www.alisdairmacindoe.com/depth-perception",
+    "order": 3,
+    "featured": true
   }
 }

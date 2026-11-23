@@ -1,5 +1,11 @@
 export const workExperience = [
   {
+    title: `AI Product Engineer`,
+    company: `Collective`,
+    years: `Nov 2026 - Present`,
+    logo: `/images/collective_logo.png`
+  },
+  {
     title: `Casual Software Developer`,
     company: `University of Melbourne`,
     years: `May 2026 - Present`,

@@ -1,6 +1,6 @@
 export interface RepoProps {
   name: string;
-  html_url: string;
+  html_url: string | null;
   description: string | null;
   topics: string[] | null;
   language: string | null;
